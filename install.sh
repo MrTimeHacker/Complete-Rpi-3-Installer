@@ -8,3 +8,4 @@ sudo apt-get update
 
 # APT-GET DONE
 
+sudo mv /hardware/RAMup.sh 
