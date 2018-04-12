@@ -10,16 +10,17 @@ sudo apt-get update
 
 sudo mv Hardware/RAMup.sh /usr/bin/
 sudo chmod +x /usr/bin/RAMup.sh
-sudo nano 
 
 sudo cp hardware/.conkyrc /home/pi/
-
+sudo cp hardware/conky.sh /usr/bin/
+sudo cp hardware/conky.desktop /etc/xdg/autostart/
+echo "CONKY DONE";
 
 # RAMup DONE
 SET LOGIN PASSWORD
 sudo passwd pi
 SET ROOT PASSWORD
 sudo passwd root
- DONE
+echo "DONE";
 
 
