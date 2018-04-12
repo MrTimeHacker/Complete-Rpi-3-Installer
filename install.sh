@@ -8,9 +8,12 @@ sudo apt-get update
 
 # APT-GET DONE
 
-sudo mv /Hardware/RAMup.sh /usr/bin/
+sudo mv Hardware/RAMup.sh /usr/bin/
 sudo chmod +x /usr/bin/RAMup.sh
 sudo nano 
+
+sudo cp hardware/.conkyrc /home/pi/
+
 
 # RAMup DONE
 SET LOGIN PASSWORD
