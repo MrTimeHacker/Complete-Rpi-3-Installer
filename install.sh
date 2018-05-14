@@ -8,15 +8,15 @@ sudo apt-get update
 
 sudo figlet Apt-Get Done!
 
-sudo mv Hardware/RAMup.sh /usr/bin/
+sudo mv RAMup.sh /usr/bin/
 sudo chmod +x /usr/bin/RAMup.sh
 sudo rmdir /etc/rc.local
-sudo mv hardware/rc.local /etc/rc.local
+sudo mv rc.local /etc/rc.local
 sudo figlet RAMup DONE!
 
-sudo cp hardware/.conkyrc /home/pi/
-sudo cp hardware/conky.sh /usr/bin/
-sudo cp hardware/conky.desktop /etc/xdg/autostart/
+sudo cp .conkyrc /home/pi/
+sudo cp conky.sh /usr/bin/
+sudo cp conky.desktop /etc/xdg/autostart/
 sudo figlet CONKY DONE
 
 
