@@ -13,6 +13,7 @@ sleep 5
 clear
 
 echo "Would you like to setup RAMup now? : $answer1"
+read $answer1
 if ["$answer1" == y]; then
     sudo mv RAMup.sh /usr/bin/
     sudo chmod +x /usr/bin/RAMup.sh
@@ -21,8 +22,9 @@ if ["$answer1" == y]; then
     sudo figlet RAMup DONE!
     sleep 5
     clear
-else
+fi
 echo "Would ypu like to setup conky now? : $answer2"
+read $answer2
 if ["$answer2" == y]; then
    sudo cp .conkyrc /home/pi/
    sudo cp conky.sh /usr/bin/
@@ -30,7 +32,7 @@ if ["$answer2" == y]; then
    sudo figlet CONKY DONE
    sleep 5
    clear
-else
+ fi
 echo "ENTER HOSTNAME : $2"
 sudo hostnamectl set-hostname $2
 echo "SET LOGIN PASSWORD";
@@ -39,6 +41,7 @@ echo "SET ROOT PASSWORD";
 sudo passwd root
 echo "DONE";
 echo "Would you like to reboot now? : $answer"
+read $answer
 if ["$answer" == y]; then
     sudo reboot
 else 
